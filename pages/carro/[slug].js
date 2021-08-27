@@ -31,9 +31,8 @@ export const getServerSideProps = async (pageContext) => {
        description,
        year,
        manufacturer->{
-           _id,
            name,
-           mainImage,
+           image,
        },
        images
 
