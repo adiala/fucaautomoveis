@@ -1,7 +1,14 @@
-import '@styles/globals.css'
+import "@styles/globals.css";
+import "tailwindcss/tailwind.css";
+import Header from "@components/Header";
 
-function Application({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const Application = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Header />
+      <Component {...pageProps} />
+    </>
+  );
+};
 
-export default Application
+export default Application;
